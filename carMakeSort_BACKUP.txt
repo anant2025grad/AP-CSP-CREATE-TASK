@@ -1,0 +1,190 @@
+// VARIABLES STORE 
+var model = "";
+var make = getText("makeInput");
+
+
+// INITIALLY HIDES DROPDOWNS
+hideElement("toyotaDropdown");
+hideElement("hondaDropdown");
+hideElement("fordDropdown");
+
+function main() {
+  
+    onEvent("makeInput", "change", function() {
+      if (getText("makeInput") == "Toyota") {
+        showElement("toyotaDropdown"); 
+        hideElement("hondaDropdown");
+        hideElement("fordDropdown");
+        make = "Toyota";
+        onEvent("toyotaDropdown", "change", function() {
+        model = getText("toyotaDropdown");
+          
+          // TOYOTA INFORMATION DATASET
+          var toyotaInfo = [
+            {
+              "Model": "Corolla",
+              "id": 1,
+              "Info": "The Toyota Corolla is a compact car that has been in production since 1966, making it one of the longest-running nameplates in automotive history. It is known for its reliability, fuel efficiency, and practicality, and has become one of the best-selling cars in the world. "
+            },
+            {
+              "Model": "Camry",
+              "id": 2,
+              "Info": "The Toyota Camry is a mid-size sedan that is known for its reliability, spacious interior, and fuel efficiency. It has a sleek and modern exterior design, with a comfortable and well-appointed interior that includes advanced technology features. "
+            },
+            {
+              "Model": "RAV4",
+              "id": 3,
+              "Info": "The Toyota RAV4 is a compact crossover SUV known for its practicality, reliability, and versatility. It has been a popular choice for families, commuters, and outdoor enthusiasts since its debut in 1994. The RAV4 offers a comfortable ride, ample cargo space, and available all-wheel drive for improved traction in slippery conditions."
+            },
+            {
+              "Model": "Highlander",
+              "id": 4,
+              "Info": "The Toyota Highlander is a midsize SUV known for its reliability, practicality, and comfort. It can seat up to eight people, and offers a spacious interior with plenty of storage and cargo space. The Highlander is equipped with a range of safety features, including lane departure warning, adaptive cruise control, and automatic emergency braking."
+            },
+            {
+              "Model": "Tacoma",
+              "id": 5,
+              "Info": "The Toyota Tacoma is a mid-size pickup truck known for its reliability, durability, and off-road capabilities. It has a spacious cabin and bed, and comes in multiple configurations including two or four-wheel drive, extended or crew cab, and different engine options."
+            },
+            {
+              "Model": "Tundra",
+              "id": 6,
+              "Info": "The Toyota Tundra is a full-size pickup truck that is known for its rugged reliability and impressive towing capacity. It is available in multiple trims and configurations, ranging from a basic work truck to a fully loaded luxury model. The Tundra features a spacious and comfortable interior, advanced safety features, and powerful engine options. It is built to withstand tough terrain and harsh weather conditions, making it a popular choice for outdoor enthusiasts and work crews alike."
+            }
+          ];
+          
+          var toyotaCarInfo = "";
+          for (var i = 0; i < toyotaInfo.length; i++) {
+            if (toyotaInfo[i].Model == model) {
+              toyotaCarInfo = toyotaInfo[i].Info;
+              break;
+            }
+          }
+          setText("output", toyotaCarInfo);
+          setText("carLabel", make + " " + model);
+        });
+        
+      }   
+
+      if (getText("makeInput") == "Honda") {
+        hideElement("toyotaDropdown"); 
+        showElement("hondaDropdown");
+        hideElement("fordDropdown");
+        make = "Honda";
+        onEvent("hondaDropdown", "change", function() {
+        model = getText("hondaDropdown");
+          
+          // TOYOTA INFORMATION DATASET
+          var hondaInfo = [
+  {
+    "Model": "Civic",
+    "Info": "The Honda Civic is a compact car produced by the Japanese automaker Honda. It has been in production since 1972 and has gained a reputation for reliability, fuel efficiency, and sporty handling. The Civic is known for its sleek and modern design, with various body styles available including sedan, coupe, and hatchback. ",
+    "id": 1
+  },
+  {
+    "Model": "Accord",
+    "Info": "The Honda Accord is a mid-size car that has been in production since 1976. It is known for its reliability, fuel efficiency, and comfortable ride. The Accord is available in both sedan and coupe models, and comes with a variety of engine options. It is also known for its advanced safety features and modern technology, including Apple CarPlay and Android Auto compatibility. ",
+    "id": 2
+  },
+  {
+    "Model": "CR-V",
+    "Info": "The Honda CR-V is a compact SUV that is known for its reliability and practicality. It has a spacious interior with comfortable seating and plenty of cargo space. It offers a smooth and quiet ride with good fuel efficiency. The CR-V is equipped with advanced safety features and has a reputation for being one of the safest vehicles in its class. It is a popular choice for families and anyone who values a reliable and practical vehicle.",
+    "id": 3
+  },
+  {
+    "Model": "Pilot",
+    "Info": "The Honda Pilot is a mid-size crossover SUV that offers a spacious and comfortable cabin, powerful and efficient performance, and a wide range of features and technologies for comfort, convenience, and safety. It can accommodate up to eight passengers and offers plenty of cargo space, making it a great choice for families and adventurers who need versatility and reliability.",
+    "id": 4
+  },
+  {
+    "Model": "Ridgeline",
+    "Info": "The Honda Ridgeline is a mid-size pickup truck that combines the utility and versatility of a traditional truck with the comfort and convenience of an SUV. It features a unibody construction, a spacious cabin, and a versatile cargo bed with a dual-action tailgate and an in-bed trunk. ",
+    "id": 5
+  }
+];
+          
+          var hondaCarInfo = "";
+          for (var i = 0; i < hondaInfo.length; i++) {
+            if (hondaInfo[i].Model == model) {
+              hondaCarInfo = hondaInfo[i].Info;
+              break;
+            }
+          }
+          setText("output", hondaCarInfo);
+          setText("carLabel", make + " " + model);
+        });
+        
+      }
+      
+      if (getText("makeInput") == "Ford") {
+        hideElement("toyotaDropdown"); 
+        hideElement("hondaDropdown");
+        showElement("fordDropdown");
+        make = "Ford";
+        onEvent("fordDropdown", "change", function() {
+        model = getText("fordDropdown");
+          
+          // TOYOTA INFORMATION DATASET
+          var fordInfo = [
+  {
+    "Info": "The Ford Focus is a compact car known for its sleek design, efficient performance, and advanced technology features. It is available in both sedan and hatchback body styles and offers a range of engine options, including gasoline, diesel, and electric powertrains. The interior is spacious and well-appointed, with a modern infotainment system, comfortable seating, and plenty of cargo space.",
+    "Model": "Focus",
+    "id": 1
+  },
+  {
+    "Model": "Fusion",
+    "Info": "The Ford Fusion is a mid-size sedan that offers a comfortable and spacious interior, smooth handling, and a range of powerful and efficient engines. It features a sleek and modern design with sharp lines and a bold front grille, as well as a variety of high-tech features such as a touchscreen infotainment system, automatic emergency braking, and adaptive cruise control. Overall, the Fusion is a reliable and versatile car that appeals to a wide range of drivers.",
+    "id": 2
+  },
+  {
+    "Model": "Explorer",
+    "Info": "The Ford Explorer is a mid-size SUV that has been in production since 1990. It is a versatile and practical vehicle that can seat up to seven passengers and offers a spacious cargo area. The Explorer is available in both front-wheel and all-wheel drive and comes with a variety of engine options, including a hybrid option. It is well-known for its safety features, reliability, and durability.",
+    "id": 3
+  },
+  {
+    "Model": "Edge",
+    "Info": "The Ford Edge is a mid-size crossover SUV with a sleek and modern design, offering a comfortable and spacious cabin for up to five passengers. It comes with a choice of two engine options - a 2.0-liter EcoBoost four-cylinder or a 2.7-liter EcoBoost V6, paired with a six-speed automatic transmission. The Edge features advanced safety and technology features, such as blind-spot monitoring, adaptive cruise control, and Ford's SYNC infotainment system. It is a practical and reliable family vehicle that delivers a smooth and enjoyable driving experience.",
+    "id": 4
+  },
+  {
+    "Model": "F-150",
+    "Info": "The Ford F-150 is a full-size pickup truck manufactured by the Ford Motor Company. It has been in production since 1948 and is currently in its fourteenth generation. The F-150 is known for its toughness, durability, and versatility, and is widely used for both personal and commercial purposes. It comes with a variety of engine options, ranging from a 3.3-liter V6 to a 5.0-liter V8, and can be configured with either rear-wheel or four-wheel drive. The F-150 is also available with a range of advanced safety and technology features, including adaptive cruise control, lane-keeping assist, and a touchscreen infotainment system.",
+    "id": 5
+  },
+  {
+    "Model": "Ranger",
+    "Info": "The Ford Ranger is a mid-size pickup truck that has been in production since the 1980s. It is designed to be a versatile, tough and reliable workhorse, and is commonly used for both personal and commercial purposes. The latest generation of the Ford Ranger features a range of powerful engines, advanced safety features, and modern technology that provides a comfortable and enjoyable driving experience. With its strong towing capacity, impressive off-road capability, and sleek design, the Ford Ranger is an excellent choice for anyone in the market for a mid-size truck.",
+    "id": 6
+  }
+];
+          
+          var fordCarInfo = "";
+          for (var i = 0; i < fordInfo.length; i++) {
+            if (fordInfo[i].Model == model) {
+              fordCarInfo = fordInfo[i].Info;
+              break;
+            }
+          }
+          setText("output", fordCarInfo);
+          setText("carLabel", make + " " + model);
+        });
+        
+      }         
+
+});
+}
+
+
+
+// BUTTON FUNCTIONALITY
+onEvent("submit", "click", function() {
+  setScreen("result");
+});
+
+onEvent("back", "click", function() {
+  setScreen("home");
+});
+
+// FUNCTION CALL
+main();
+

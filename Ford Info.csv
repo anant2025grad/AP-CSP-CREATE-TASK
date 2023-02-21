@@ -1,0 +1,32 @@
+[
+  {
+    "Info": "The Ford Focus is a compact car known for its sleek design, efficient performance, and advanced technology features. It is available in both sedan and hatchback body styles and offers a range of engine options, including gasoline, diesel, and electric powertrains. The interior is spacious and well-appointed, with a modern infotainment system, comfortable seating, and plenty of cargo space.",
+    "Model": "Focus",
+    "id": 1
+  },
+  {
+    "Model": "Fusion",
+    "Info": "The Ford Fusion is a mid-size sedan that offers a comfortable and spacious interior, smooth handling, and a range of powerful and efficient engines. It features a sleek and modern design with sharp lines and a bold front grille, as well as a variety of high-tech features such as a touchscreen infotainment system, automatic emergency braking, and adaptive cruise control. Overall, the Fusion is a reliable and versatile car that appeals to a wide range of drivers.",
+    "id": 2
+  },
+  {
+    "Model": "Explorer",
+    "Info": "The Ford Explorer is a mid-size SUV that has been in production since 1990. It is a versatile and practical vehicle that can seat up to seven passengers and offers a spacious cargo area. The Explorer is available in both front-wheel and all-wheel drive and comes with a variety of engine options, including a hybrid option. It is well-known for its safety features, reliability, and durability.",
+    "id": 3
+  },
+  {
+    "Model": "Edge",
+    "Info": "The Ford Edge is a mid-size crossover SUV with a sleek and modern design, offering a comfortable and spacious cabin for up to five passengers. It comes with a choice of two engine options - a 2.0-liter EcoBoost four-cylinder or a 2.7-liter EcoBoost V6, paired with a six-speed automatic transmission. The Edge features advanced safety and technology features, such as blind-spot monitoring, adaptive cruise control, and Ford's SYNC infotainment system. It is a practical and reliable family vehicle that delivers a smooth and enjoyable driving experience.",
+    "id": 4
+  },
+  {
+    "Model": "F-150",
+    "Info": "The Ford F-150 is a full-size pickup truck manufactured by the Ford Motor Company. It has been in production since 1948 and is currently in its fourteenth generation. The F-150 is known for its toughness, durability, and versatility, and is widely used for both personal and commercial purposes. It comes with a variety of engine options, ranging from a 3.3-liter V6 to a 5.0-liter V8, and can be configured with either rear-wheel or four-wheel drive. The F-150 is also available with a range of advanced safety and technology features, including adaptive cruise control, lane-keeping assist, and a touchscreen infotainment system.",
+    "id": 5
+  },
+  {
+    "Model": "Ranger",
+    "Info": "The Ford Ranger is a mid-size pickup truck that has been in production since the 1980s. It is designed to be a versatile, tough and reliable workhorse, and is commonly used for both personal and commercial purposes. The latest generation of the Ford Ranger features a range of powerful engines, advanced safety features, and modern technology that provides a comfortable and enjoyable driving experience. With its strong towing capacity, impressive off-road capability, and sleek design, the Ford Ranger is an excellent choice for anyone in the market for a mid-size truck.",
+    "id": 6
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "Model": "Corolla",
+    "id": 1,
+    "Info": "The Toyota Corolla is a compact car that has been in production since 1966, making it one of the longest-running nameplates in automotive history. It is known for its reliability, fuel efficiency, and practicality, and has become one of the best-selling cars in the world. "
+  },
+  {
+    "Model": "Camry",
+    "id": 2,
+    "Info": "The Toyota Camry is a mid-size sedan that is known for its reliability, spacious interior, and fuel efficiency. It has a sleek and modern exterior design, with a comfortable and well-appointed interior that includes advanced technology features. "
+  },
+  {
+    "Model": "RAV4",
+    "id": 3,
+    "Info": "The Toyota RAV4 is a compact crossover SUV known for its practicality, reliability, and versatility. It has been a popular choice for families, commuters, and outdoor enthusiasts since its debut in 1994. The RAV4 offers a comfortable ride, ample cargo space, and available all-wheel drive for improved traction in slippery conditions."
+  },
+  {
+    "Model": "Highlander",
+    "id": 4,
+    "Info": "The Toyota Highlander is a midsize SUV known for its reliability, practicality, and comfort. It can seat up to eight people, and offers a spacious interior with plenty of storage and cargo space. The Highlander is equipped with a range of safety features, including lane departure warning, adaptive cruise control, and automatic emergency braking."
+  },
+  {
+    "Model": "Tacoma",
+    "id": 5,
+    "Info": "The Toyota Tacoma is a mid-size pickup truck known for its reliability, durability, and off-road capabilities. It has a spacious cabin and bed, and comes in multiple configurations including two or four-wheel drive, extended or crew cab, and different engine options."
+  },
+  {
+    "Model": "Tundra",
+    "id": 6,
+    "Info": "The Toyota Tundra is a full-size pickup truck that is known for its rugged reliability and impressive towing capacity. It is available in multiple trims and configurations, ranging from a basic work truck to a fully loaded luxury model. The Tundra features a spacious and comfortable interior, advanced safety features, and powerful engine options. It is built to withstand tough terrain and harsh weather conditions, making it a popular choice for outdoor enthusiasts and work crews alike."
+  }
+]

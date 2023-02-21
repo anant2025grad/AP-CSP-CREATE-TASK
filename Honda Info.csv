@@ -1,0 +1,27 @@
+[
+  {
+    "Model": "Civic",
+    "Info": "The Honda Civic is a compact car produced by the Japanese automaker Honda. It has been in production since 1972 and has gained a reputation for reliability, fuel efficiency, and sporty handling. The Civic is known for its sleek and modern design, with various body styles available including sedan, coupe, and hatchback. ",
+    "id": 1
+  },
+  {
+    "Model": "Accord",
+    "Info": "The Honda Accord is a mid-size car that has been in production since 1976. It is known for its reliability, fuel efficiency, and comfortable ride. The Accord is available in both sedan and coupe models, and comes with a variety of engine options. It is also known for its advanced safety features and modern technology, including Apple CarPlay and Android Auto compatibility. ",
+    "id": 2
+  },
+  {
+    "Model": "CR-V",
+    "Info": "The Honda CR-V is a compact SUV that is known for its reliability and practicality. It has a spacious interior with comfortable seating and plenty of cargo space. It offers a smooth and quiet ride with good fuel efficiency. The CR-V is equipped with advanced safety features and has a reputation for being one of the safest vehicles in its class. It is a popular choice for families and anyone who values a reliable and practical vehicle.",
+    "id": 3
+  },
+  {
+    "Model": "Pilot",
+    "Info": "The Honda Pilot is a mid-size crossover SUV that offers a spacious and comfortable cabin, powerful and efficient performance, and a wide range of features and technologies for comfort, convenience, and safety. It can accommodate up to eight passengers and offers plenty of cargo space, making it a great choice for families and adventurers who need versatility and reliability.",
+    "id": 4
+  },
+  {
+    "Model": "Ridgeline",
+    "Info": "The Honda Ridgeline is a mid-size pickup truck that combines the utility and versatility of a traditional truck with the comfort and convenience of an SUV. It features a unibody construction, a spacious cabin, and a versatile cargo bed with a dual-action tailgate and an in-bed trunk. ",
+    "id": 5
+  }
+]
